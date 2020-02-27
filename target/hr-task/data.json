@@ -1,0 +1,54 @@
+[
+  {
+    "city": "London",
+    "temp": 23,
+    "pressure": 1003,
+    "humidity": 50,
+    "speed": 8.2,
+    "deg": 140
+  },
+  {
+    "city": "Tokyo",
+    "temp": 28,
+    "pressure": 1093,
+    "humidity": 60,
+    "speed": 9.2,
+    "deg": 110
+  },
+  {
+    "city": "Paris",
+    "temp": 21,
+    "pressure": 1053,
+    "humidity": 70,
+    "speed": 8.1,
+    "deg": 120
+  },
+  {
+    "city": "Rome",
+    "temp": 19,
+    "pressure": 1021,
+    "humidity": 80,
+    "speed": 4.2,
+    "deg": 170
+  },
+  {
+    "zip": 10001,
+    "timezone": "Easter Island Standard Time"
+  },
+  {
+    "zip": 10002,
+    "timezone": "Eastern European Time"
+  },
+  {
+    "zip": 10003,
+    "timezone": "East Greenland Time"
+  },
+  {
+    "zip": 10004,
+    "timezone": "Eastern Standard Time"
+  },
+  {
+    "zip": 10005,
+    "timezone": "Hong Kong Time"
+  }
+]
