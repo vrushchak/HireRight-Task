@@ -27,21 +27,19 @@ public class AppServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String zipInput = request.getParameter("zipInput");
         String geo = searchDataShort(zipInput, "zip");
-        if (geo != null) {
-            response.setContentType("application/json; charset=UTF-8");
-            response.getWriter().println(geo);
-            response.setStatus(200);
-        } else {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND);
-        }
+        printOnPage(geo, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String city = request.getParameter("city");
         String weather = searchDataShort(city, "weather");
-        if (weather != null) {
+        printOnPage(weather, response);
+    }
+
+    private void printOnPage(String type, HttpServletResponse response) throws IOException {
+        if (type != null) {
             response.setContentType("application/json; charset=UTF-8");
-            response.getWriter().println(weather);
+            response.getWriter().println(type);
             response.setStatus(200);
         } else {
             response.sendError(HttpServletResponse.SC_NOT_FOUND);
